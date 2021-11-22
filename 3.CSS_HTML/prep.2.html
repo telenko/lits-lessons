@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Назва</title>
+</head>
+
+<body>
+    <img src='https://picsum.photos/200/300' />
+    <video width="320" height="240" controls aria-label='video about our company'>
+        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+        Your browser does not support the video tag.
+    </video>
+    <audio controls src="media/sound.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+    </audio>
+    <br />
+    <input type='color' />
+    <br />
+    <input type='search' />
+    <br />
+    <input type='range' />
+    <br />
+    <input type='week' />
+    <br />
+    <input type='url' />
+    <br />
+    <hr />
+    <iframe src="http://onu.edu.ua/uk/" width="468" height="300">
+        Ваш браузер не підтримує фрейми!
+    </iframe>
+    <iframe src="prep.html" width="468" height="300">
+        Ваш браузер не підтримує фрейми!
+    </iframe>
+    <hr />
+    <form>
+        <div>
+            <label for='name_input'>Name</label>
+            <input name='name' type='text' required id='name_input' />
+        </div>
+        <div>
+            <label for='age_input'>Age</label>
+            <input name='age' type='number' required id='age_input' />
+        </div>
+        <div>
+            <label for='email_input'>Email</label>
+            <input name='email' type='email' required id='email_input' />
+        </div>
+        <div>
+            <label for='site_input'>Web Site</label>
+            <input name='site' type='url' required id='site_input' />
+        </div>
+        <div>
+            <label for='about_input'>About self</label>
+            <textarea name='about_self' id='about_input'></textarea>
+        </div>
+        <div>
+            <label for='m_f_input'>M/F</label>
+            <select name='m/f' id='m_f_input'>
+                <option value='M'>M</option>
+                <option value='F'>F</option>
+            </select>
+        </div>
+        <div>
+            <label for='checkbox_has_experience'>Has experience</label>
+            <input name='experience' type='checkbox' id='checkbox_has_experience' />
+        </div>
+
+        <!-- Приклад радіо-баттону -->
+        <div>
+            <label for='radio_role' aria-label='role' role='radiogroup'>
+                Role
+                <input name='role' type='radio' value='student' required aria-label='student' />
+                <input name='role' type='radio' value='teacher' aria-label='teacher' />
+            </label>
+
+        </div>
+
+        <!-- Кнопка ОК -->
+        <button type='submit'>Ok</button>
+        <button type='reset'>Cancel</button>
+    </form>
+
+    <div role='button' tabindex="0">Click me</div>
+    <div role='button' aria-hidden>Click 2</div>
+</body>
+
+</html>

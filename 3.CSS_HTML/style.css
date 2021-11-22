@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+    font-weight: bold;
+    font-weight: normal;
+}
+
+h1 {
+    color: blue;
+}
+
+.some_label {
+    color: red;
+    font-weight: bold;
+    font-weight: normal;
+}
+
+[type=text] {
+    color: black;
+}
+
+[type] {
+    color: blue;
+}
+
+input[type=text].some_label {
+    color: blue;
+}
+
+h1, h2, h3, input[type=text].some_label, .some_label  {
+    background-color: yellow;
+}
