@@ -1,0 +1,25 @@
+header {
+  /* background-color: rgb(71, 71, 252); */
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button.btn-primary {
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.btn-primary:hover {
+  background-color: rgb(0, 0, 133);
+}
+
+button.btn-secondary {
+}
