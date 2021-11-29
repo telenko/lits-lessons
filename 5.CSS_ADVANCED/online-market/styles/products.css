@@ -1,0 +1,17 @@
+.product {
+  background-color: #eee;
+  display: flex;
+}
+
+.product .price {
+  font-weight: bold;
+}
+
+.product > section {
+  padding: 10px;
+}
+
+.product .details {
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}

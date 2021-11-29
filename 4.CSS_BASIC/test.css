@@ -35,10 +35,10 @@ div#panel input:first-of-type {
   /* color: blue; */
 }
 
-/* div > span:nth-child(2) {
+div > span:nth-of-type(5n) {
   color: lime;
 }
-
+/* 
 .quote {
     font-style: italic;
 }
@@ -54,5 +54,3 @@ div#panel input:first-of-type {
 div#panel > p {
   color: blue;
 }
-
-
