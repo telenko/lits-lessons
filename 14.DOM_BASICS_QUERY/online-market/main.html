@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LITS Магазин</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="charset" content="UTF-8">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
+    <link rel="stylesheet/less" type="text/css" href='styles/theme/index.less' />
+    <link rel="stylesheet/less" type="text/css" href="styles/products.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+</head>
+
+<body>
+    <header>
+        <article class='left-panel'>
+            <span role='button' class="material-icons icon icon-light" aria-label='Відкрити меню'>menu</span>
+            <img class='logo' src='media/logo.png' width='100' height='50' />
+        </article>
+        <article class='main-panel'>
+            <article class='search-bar'>
+                <input type='search' placeholder="Введіть назву чи тип товару" />
+                <button class='btn-primary'>Знайти</button>
+            </article>
+        </article>
+        <article class='right-panel'>
+            <span role='button' class="material-icons icon icon-light"
+                aria-label='Відкрити корзину'>shopping_cart</span>
+        </article>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href='profile.html'>Профіль</a></li>
+                <li><a href='orders.html'>Замовлення</a></li>
+            </ul>
+        </aside>
+        <section id='filters'>
+            <ul>
+                <li><a>Смартфони</a></li>
+                <li><a>Побутова техніка</a></li>
+            </ul>
+        </section>
+        <section id='products'>
+            <article class='product' role='button'>
+                <section class='preview'>
+                    <img class='preview-img' src='https://picsum.photos/100/100' width='100' height='100'>
+                </section>
+                <section class='details'>
+                    <p class='type'>Тип</p>
+                    <p class='model'>Модель</p>
+                    <p class='info'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex quia,
+                        laboriosam ratione iure provident nobis sint, labore earum magni vel doloribus. Eligendi
+                        repudiandae sunt quam recusandae debitis, illo eaque?</p>
+                </section>
+                <section class="actions">
+                    <button class='btn-primary'>Замовити</button>
+                    <p class='price'>2222 грн</p>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href='about.html'>Про нас</a></li>
+            <li><a href='support.html'>Підтримка</a></li>
+        </ul>
+        <p>Copyright Lits School 2021</p>
+    </footer>
+    <script src="scripts/dom-test.js"></script>
+</body>
+
+</html>
