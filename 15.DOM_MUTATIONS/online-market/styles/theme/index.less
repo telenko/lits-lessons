@@ -1,0 +1,183 @@
+@import './button.less';
+@import './variables.less';
+
+/* 5px 10px 15px 20px 25px 30px */
+/* general styles */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --grid-base: 5px;
+  --border-radius: 3px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  /* vh, vw  */
+}
+
+/* header styles */
+
+header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(57, 67, 135, 1) 100%,
+    rgba(255, 0, 87, 0.5497549361541492) 100%
+  );
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .left-panel {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+header .logo {
+  width: 80px;
+  height: 40px;
+}
+
+@media (max-width: @device-xs-size) {
+  header .logo {
+    display: none;
+  }
+}
+
+header .left-panel > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+header .main-panel {
+  flex: 3;
+}
+
+header .right-panel {
+  flex: 2;
+  display: flex;
+  justify-content: end;
+}
+
+/* footer */
+footer {
+  background-color: #eee;
+  padding: calc(var(--grid-base) * 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > ul {
+  display: flex;
+}
+
+/*  main block */
+main {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 60px;
+}
+@media (max-width: @device-xs-size) {
+  main {
+    margin-top: calc(var(--grid-base) * 10);
+  }
+}
+
+/* aside */
+aside:not(.aside-opened) {
+  display: none;
+}
+
+/* buttons */
+
+/* search bar */
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="search"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-grow: 1;
+}
+
+.search-bar button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media (max-width: @device-xs-size) {
+  .search-bar button {
+    display: none;
+  }
+}
+
+/* inputs */
+input {
+  height: calc(var(--grid-base) * 6);
+  padding: calc(var(--grid-base) * 2);
+  border: none;
+  outline: none;
+}
+
+input[type="search"] {
+  font-size: 16px;
+  border-radius: var(--border-radius);
+}
+
+/* links */
+a {
+  line-height: 30px;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: rgba(120, 120, 120, 0.1);
+}
+
+/* lists */
+ul {
+  list-style-type: none;
+}
+@media (max-width: @device-xs-size) {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* icons */
+.icon {
+  cursor: pointer;
+}
+
+.icon.icon-light {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+.icon.icon-light:hover {
+  color: rgb(196, 196, 196);
+}
+
+/* images */
+.logo {
+  filter: contrast(2);
+}
