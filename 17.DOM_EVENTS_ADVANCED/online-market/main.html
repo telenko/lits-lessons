@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LITS Магазин</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="charset" content="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet/less"
+      type="text/css"
+      href="styles/theme/index.less"
+    />
+    <link rel="stylesheet/less" type="text/css" href="styles/products.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+  </head>
+
+  <body>
+    <header>
+      <article class="left-panel">
+        <span
+          id="sidebar-toggle"
+          role="button"
+          class="material-icons icon icon-light"
+          aria-label="Відкрити меню"
+          >menu</span
+        >
+        <img class="logo" src="media/logo.png" width="100" height="50" />
+      </article>
+      <article class="main-panel">
+        <article class="search-bar">
+          <input
+            id="main-search"
+            type="search"
+            placeholder="Введіть назву чи тип товару"
+          />
+          <button class="btn-primary">Знайти</button>
+        </article>
+      </article>
+      <article class="right-panel">
+        <span
+          role="button"
+          class="material-icons icon icon-light"
+          aria-label="Відкрити корзину"
+          >shopping_cart</span
+        >
+      </article>
+    </header>
+    <main>
+      <aside id="sidepanel">
+        <ul>
+          <li><a href="profile.html">Профіль</a></li>
+          <li><a href="orders.html">Замовлення</a></li>
+        </ul>
+      </aside>
+      <section id="filters">
+        <ul></ul>
+      </section>
+      <section id="products">
+        <!-- products will be here -->
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="support.html">Підтримка</a></li>
+      </ul>
+      <p>Copyright Lits School 2021</p>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
