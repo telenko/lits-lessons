@@ -1,0 +1,30 @@
+@import './variables.less';
+
+button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease-in-out;
+
+  &.btn-primary {
+    background-color: @palette-primary-bg;
+    color: white;
+    &:hover {
+      background-color: lighten(
+        @palette-primary-bg,
+        @palette-primary-hover-koef
+      );
+    }
+  }
+}
+
+button.btn-secondary {
+  background-color: rgb(231, 231, 231);
+  color: #000;
+}
+button.btn-secondary:hover {
+  background-color: rgb(185, 185, 185);
+}

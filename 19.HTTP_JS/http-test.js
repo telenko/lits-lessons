@@ -34,10 +34,11 @@
  * 3. designing firebase db
  * 4. creating products in base
  * 5. showing products list
+ * 
  */
 
 const xhr = new XMLHttpRequest();//{}
-xhr.open("get", "https://swapi.dev/api/films"); // <protocol>://<server_address>/context
+xhr.open("get", "https://swapi.dev/api/films");
 xhr.send();
 xhr.addEventListener('load', () => {
     console.log(JSON.parse(xhr.responseText));
