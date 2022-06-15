@@ -1,0 +1,27 @@
+{
+  "name": "28.tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-submodule.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@testing-library/jest-dom": "^5.16.2",
+    "jest": "^27.5.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "jest": {
+    "transform": {
+      "\\.js?$": "babel-jest"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testEnvironment": "jsdom"
+  }
+}
